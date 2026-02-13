@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/amine7536/backend-2
+  tag: latest
+  pullPolicy: Always
+
+service:
+  port: 8080
+
+ingress:
+  enabled: true
+  host: backend-2.127.0.0.1.nip.io
+
+env:
+  API_URL: "https://jsonplaceholder.typicode.com"

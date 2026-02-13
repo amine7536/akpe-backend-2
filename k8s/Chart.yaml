@@ -1,0 +1,5 @@
+apiVersion: v2
+name: backend-2
+description: Backend 2 - Go service proxying external API
+version: 0.1.0
+appVersion: "0.1.0"
