@@ -3,3 +3,8 @@ name: backend-2
 description: Backend 2 - Go service proxying external API
 version: 0.1.0
 appVersion: "0.1.0"
+dependencies:
+  - name: akpe-service
+    version: 0.1.0
+    repository: oci://ghcr.io/amine7536/akpe-charts
+    alias: app

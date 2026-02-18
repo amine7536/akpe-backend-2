@@ -1,16 +1,17 @@
-replicaCount: 1
+app:
+  replicaCount: 1
 
-image:
-  repository: ghcr.io/amine7536/akpe-backend-2
-  tag: ""
-  pullPolicy: IfNotPresent
+  image:
+    repository: ghcr.io/amine7536/akpe-backend-2
+    tag: ""
+    pullPolicy: IfNotPresent
 
-service:
-  port: 8080
+  service:
+    port: 8080
 
-ingress:
-  enabled: true
-  host: backend-2.127.0.0.1.nip.io
+  ingress:
+    enabled: true
+    host: backend-2.127.0.0.1.nip.io
 
-env:
-  API_URL: "https://jsonplaceholder.typicode.com"
+  env:
+    API_URL: "https://jsonplaceholder.typicode.com"
